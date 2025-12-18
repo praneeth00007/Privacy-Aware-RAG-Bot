@@ -1,0 +1,17 @@
+schema 1.1
+
+type user
+
+type role
+  relations
+    define member: [user]
+
+type department
+  relations
+    define employee: [user]
+
+type document
+  relations
+    define viewer: [user, role#member, department#employee]
+    define editor: [user] or viewer
+    define admin: [user]

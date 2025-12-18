@@ -1,0 +1,117 @@
+{
+  "documents": [
+    {
+      "id": "doc_budget_q4_2024",
+      "title": "Q4 2024 Salary Budget",
+      "department": "finance",
+      "classification": "confidential",
+      "requiredRole": "manager",
+      "accessRules": [
+        {
+          "user": "user:alice",
+          "relation": "viewer"
+        }
+      ]
+    },
+    {
+      "id": "doc_contract_nda",
+      "title": "Master NDA Agreement - TechCorp Partnership",
+      "department": "legal",
+      "classification": "restricted",
+      "requiredRole": "legal_team",
+      "accessRules": [
+        {
+          "user": "user:charlie",
+          "relation": "viewer"
+        }
+      ]
+    },
+    {
+      "id": "doc_employee_handbook",
+      "title": "Company Employee Handbook 2024",
+      "department": "human-resources",
+      "classification": "internal",
+      "accessRules": [
+        {
+          "user": "user:alice",
+          "relation": "viewer"
+        },
+        {
+          "user": "user:bob",
+          "relation": "viewer"
+        },
+        {
+          "user": "user:charlie",
+          "relation": "viewer"
+        }
+      ]
+    },
+    {
+      "id": "doc_security_incident",
+      "title": "Security Incident Report - Q3 2024",
+      "department": "security",
+      "classification": "restricted",
+      "requiredRole": "security_officer",
+      "accessRules": [
+        {
+          "user": "user:dave",
+          "relation": "viewer"
+        }
+      ]
+    },
+    {
+      "id": "doc_product_roadmap",
+      "title": "Product Roadmap 2025",
+      "department": "engineering",
+      "classification": "internal",
+      "accessRules": [
+        {
+          "user": "role:manager",
+          "relation": "viewer"
+        }
+      ]
+    },
+    {
+      "id": "doc_vacation_policy",
+      "title": "Vacation and Time Off Policy",
+      "department": "human-resources",
+      "classification": "public",
+      "accessRules": [
+        {
+          "user": "role:employee",
+          "relation": "viewer"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "alice",
+      "email": "alice@company.com",
+      "role": "manager",
+      "department": "human-resources",
+      "permissions": ["view_salary", "view_budget"]
+    },
+    {
+      "id": "bob",
+      "email": "bob@company.com",
+      "role": "employee",
+      "department": "engineering",
+      "permissions": ["view_general"]
+    },
+    {
+      "id": "charlie",
+      "email": "charlie@company.com",
+      "role": "legal_team",
+      "department": "legal",
+      "permissions": ["view_contracts", "view_legal"]
+    },
+    {
+      "id": "dave",
+      "email": "dave@company.com",
+      "role": "security_officer",
+      "department": "security",
+      "permissions": ["view_security", "view_incidents"]
+    }
+  ]
+}
