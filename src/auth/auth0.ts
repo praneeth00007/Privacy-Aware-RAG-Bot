@@ -1,6 +1,8 @@
+/// <reference types="node" />
 import axios, { AxiosInstance } from 'axios';
-import jwt, { JwtPayload } from 'jsonwebtoken';
-import * as NodeCache from 'node-cache';
+import jwt from 'jsonwebtoken';
+import type { JwtPayload } from 'jsonwebtoken';
+import NodeCache from 'node-cache';
 
 export interface User {
   id: string;

@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from 'axios';
-import * as NodeCache from 'node-cache';
+import NodeCache from 'node-cache';
 
 export interface AuthorizationCheck {
   user: string;
